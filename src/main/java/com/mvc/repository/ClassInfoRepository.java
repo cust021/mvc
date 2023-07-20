@@ -25,6 +25,7 @@ public class ClassInfoRepository {
 		List<Map<String,String>> classInfoList = new ArrayList<>();
 		try {
 			Connection con = DriverManager.getConnection(url,user,pwd);
+			
 			String sql = "SELECT * FROM CLASS_INFO WHERE 1=1";
 			PreparedStatement ps = con.prepareStatement(sql);
 			ResultSet rs = ps.executeQuery();
