@@ -68,7 +68,7 @@
 	</servlet>
 	<servlet-mapping>
 	<servlet-name>movie-info</servlet-name>
-	<url-pattern>movie-info/*</url-pattern>
+	<url-pattern>/movie-info/*</url-pattern>
 	</servlet-mapping>
 
 </web-app>

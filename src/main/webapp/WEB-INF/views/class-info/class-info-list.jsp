@@ -20,11 +20,15 @@
 		</tr>
 		<c:forEach items="${classInfoList}" var="classInfo">
 		<tr>
-			<td>${classInfo.ciNum}</td>
+			<td><a href="/class-info/view?ciNum=${classInfo.ciNum}">${classInfo.ciNum}</a></td>
 			<td>${classInfo.ciName}</td>
 			<td>${classInfo.ciDesc}</td>
 		</tr>
 </c:forEach>
+
+	<tr>
+		<td align="right" colspan="4"> <button onclick="location.href='/class-info/insert'">등록</button>
+	</tr>
 	</table>
 </body>
 </html>
